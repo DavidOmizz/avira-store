@@ -1,0 +1,82 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.logo {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  letter-spacing: 1px;
+  font-size: xx-large;
+}
+.logo a {
+  text-decoration: none;
+}
+.logo-edit {
+  color: orangered;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  /* color: #fff; */
+}
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav button {
+  background-color: transparent;
+  background-color: orangered;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  /* font-size: 11px; */
+  font-weight: bold;
+}
+
+nav button:hover {
+  background-color: transparent;
+  outline: 2px solid orangered;
+  color: black;
+}
+.show {
+  position: absolute;
+  right: 0;
+  background-color: blue;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  height: 100vh;
+  line-height: 60px;
+  margin-top: 30px;
+  animation: ease-in-out 2s;
+}
+
+.hide {
+  display: none;
+}
+
+.OpenMenuBtn {
+  position: absolute;
+  right: 0px;
+}
+.CloseMenuBtn {
+  position: absolute;
+  right: 0px;
+}

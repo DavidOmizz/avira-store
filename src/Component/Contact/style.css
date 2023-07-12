@@ -1,0 +1,14 @@
+html {
+    font-size: 10px;
+  }
+  * {
+    /* margin: 0; */
+    /* padding: 0; */
+    max-width: 100%;
+  }
+.contact-hero{
+    height: 10vh;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+}

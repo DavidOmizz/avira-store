@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Index from './Component/Home';
+import Product from './Component/API/Product';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Contact from './Component/Contact/Contact';
+import PageNotFound from './Component/PageNotFound/PageNotFound';
+import SingleProduct from './Component/API/SingleProduct';
+
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Index/> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Index/>} />
+          <Route path='product/:id' element={<SingleProduct/>}/>
+          <Route path='contact' element={<Contact/>} />
+          <Route path='*' element={<PageNotFound/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
+    // <Product/>
   );
 }
 
